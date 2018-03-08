@@ -5,23 +5,15 @@ import java.util.Map;
 
 public class MayTheFourthBeWithYouThreeApplication {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Stream stream = new StreamImpl("aAbBABacafe");
 		System.out.println(firstChar(stream));
-		Stream s  = new StreamImpl("aa");
-		System.out.println(firstChar(s));
-		Stream s1  = new StreamImpl("aba");
-		System.out.println(firstChar(s1));
-		Stream s2  = new StreamImpl("ababe");
-		System.out.println(firstChar(s2));
-		Stream s3  = new StreamImpl("aebabe");
-		System.out.println(firstChar(s3));
 	}
 	
-	public static Character firstChar(Stream input) throws Exception {
+	public static Character firstChar(Stream input) {
 		Map<Character,Character> map = new HashMap<>();
 		if(input.size() < 2) {
-			throw new Exception("First Char not found!");
+			return ' ';
 		}
 		Character old = input.getNext();
 		while(input.hasNext()) {
