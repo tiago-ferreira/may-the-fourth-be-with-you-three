@@ -4,13 +4,13 @@
 
 ### DeadLock
 
-<div style="text-align: justify"> your-text-here 
 
-<p> Suponhamos que temos um método A e um método B, todos os dois métodos são sincronizados, ou seja, só um processo pode usar o método A ou B de cada vez, e então um processo A está executando o método A, e no momento da execução de A, o processo A necessita executar o método B, só que o método B já está sendo usado por outro processo B, e o processo B que está executando o método B também precisa executar o método A, como os dois métodos são sincronizados e só permitem a execução de um processo por vez, fica travado onde os processos ficam tentando utilizar um recurso que já está em uso por outro. </p>
-<p>
+
+<p style="text-align: justify"> Suponhamos que temos um método A e um método B, todos os dois métodos são sincronizados, ou seja, só um processo pode usar o método A ou B de cada vez, e então um processo A está executando o método A, e no momento da execução de A, o processo A necessita executar o método B, só que o método B já está sendo usado por outro processo B, e o processo B que está executando o método B também precisa executar o método A, como os dois métodos são sincronizados e só permitem a execução de um processo por vez, fica travado onde os processos ficam tentando utilizar um recurso que já está em uso por outro. </p>
+<p style="text-align: justify">
 Uma maneira de evitar esse caso é, ao sincronizar um método, ter cuidado para que ele não precise executar outro método sincronizado que faça referência a ele</p>
 
-</div>
+<
 
 ### ParallelStreams
 
