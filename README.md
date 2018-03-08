@@ -1,5 +1,7 @@
 # may-the-fourth-be-with-you-three
-may-the-fourth-be-with-you-three
+
+
+
 ### DeadLock
 
 
@@ -8,7 +10,7 @@ Suponhamos que temos um método A e um método B, todos os dois métodos são si
 Uma maneira de evitar esse caso é, ao sincronizar um método, ter cuidado para que ele não precise executar outro método sincronizado que faça referência a ele
 
 
-###ParallelStreams
+### ParallelStreams
 
 A principal diferença é que uma Stream foi feita para ser usada de uma forma sequencial, onde a mesma não aproveita processadores multi-core, e o ParrallelStreams foi feito para aproveitar mais recursos de processadores multi-core. Bom mas onde eu usaria cada um.
 
